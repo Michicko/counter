@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #DCB579;
+    --danger-color: #d9534f;
+    --success-color: #5cb85c;
+    --dark-color: #333;
+    --white-color: #fff;
+    --light-color: #f4f4f4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: var(--primary-color);
+}
+
+.container {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    margin: 0 auto;
+    height: 450px;
+    max-width: 600px;
+    min-width: 450px;
+    border: 5px solid var(--light-color);
+    box-shadow: 0 2.8PX 2.2PX rgba(0, 0, 0, 0.34),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.48),
+        0 12.5px 10px rgba(0, 0, 0, 0.6),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin: 15px 0;
+    font-size: 2.5rem;
+}
+
+#number {
+    text-align: center;
+    font-size: 10.5rem;
+    margin-top: -25px;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin: 10px;
+    padding: 15px;
+    border: none;
+    color: var(--dark-color);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(.95);
+}
+
+.danger {
+    color: var(--danger-color);
+}
+
+.success {
+    color: var(--success-color);
+}
+
+footer {
+    text-align: center;
+}
